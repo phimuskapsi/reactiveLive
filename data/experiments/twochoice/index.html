@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Two Choice Impulsivity</title>
+		
+	</head>
+	<body>
+		<div id="tcipmainPage">
+			<div id="tcipsubContainer">
+				<div id="tcipcenterContent">
+					<div id="tcipdisplayFrameLeft" class="tcipdisplayFrame">
+						<div id="tcipdisplayLeft"class="tcipdisplayWindow">
+							<canvas id="tcipcanvasLeft" width="280px" height="280px"></canvas>
+						</div>
+						<button id="tcipleftControl" class="tcipcontrol">Select</button>
+					</div>
+					<div id="tcipdisplayFrameRight" class="tcipdisplayFrame">
+						<div id="tcipdisplayRight"class="tcipdisplayWindow">
+							<canvas id="tcipcanvasRight"width="280px" height="280px"></canvas>
+						</div>
+						<button id="tciprightControl" class="tcipcontrol">Select</button>
+					</div>
+				</div>
+				<div id="tcipboxes">
+					<div id="tcipscoreBox">
+						<div id="tcipscoreTitle">
+							<h2>Score</h2>
+						</div>
+						<div id="tcipscoreDisplay">
+							<h1>0</h1>
+						</div>
+					</div>
+					<div id="tciproundBox">
+						<div id="tciproundTitle">
+							<h2>Round</h2>
+						</div>
+						<div id="tciproundDisplay">
+							<h1>0</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="tcipinformationModal" class="modal">
+				<p>Please enter the number of rounds.</p>
+				<form>
+					<fieldset>
+						<label for="roundCount"># of Rounds:</label>
+						<input id="tciproundCount" type="text" />
+					</fieldset>				
+				</form>
+			</div>
+			<div id="tcipstatsModal" class="modal">
+				<p>Here are the results of the test. Press ok to finish the protocol. Thank you!</p>
+				<form>
+					<fieldset>
+						<div class='labelBox'><label for="squareChoices"># of Times User Chose Squares: </label></div>
+						<div class='inputBox'><input id="tcipsquareChoices" type="text"/></div>
+						<br />
+						<div class='labelBox'><label for="circleChoices"># of Times User Chose Circles: </label></div>
+						<div class='inputBox'><input id="tcipcircleChoices" type="text"/></div>
+						<br />
+						<div class='labelBox'><label for="totalTime">Total Time: </label></div>
+						<div class='inputBox'><input id="tciptotalTime" type="text"/></div>
+						<br />
+						<div class='labelBox'><label for="totalScore">Total Score: </label></div>
+						<div class='inputBox'><input id="tciptotalScore" type="text"/></div>
+						<br />
+					</fieldset>
+				</form>
+			</div>
+			<div id="tcipresetModal" class="modal">
+				<p>Are you sure you want to cancel this test and reset?</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

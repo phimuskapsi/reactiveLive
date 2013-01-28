@@ -1,0 +1,156 @@
+<script type="text/javascript"> 
+
+$(function(){
+	initSurvey();
+});
+
+</script>
+<div id="createSurveyTab" class="creatorTab">
+	<div class="tabTitle">
+		<h2>Create a Survey</h2>
+	</div>
+	<div id="surveyOptions" class="optionHead ohLeft">
+		<label for="surveyName" title="Please enter a survey name.">Survey Name: </label>
+		<input type="text" value="" id="surveyName" />		
+		<br />
+		<label for="existingSurvey" title="Please select an existing survey.">Existing Survey Name: </label>
+		<select id="existingSurvey">
+			<option value="">--- There are no existing surveys ---</option>
+		</select>
+		<br />
+		<label for="surveyStartDate" title="Select a start date if you want.">Start Date:</label>
+		<input type="text" value="" id="surveyStartDate" />
+		<br />
+		<label for="surveyEndDate" title="Select a end date if you want.">Start Date:</label>
+		<input type="text" value="" id="surveyEndDate" />
+		
+	</div>
+	<div id="surveyOptions2" class="optionHead ohRight">
+		<label for="surveyDescription" title="Please enter a survey description.">Survey Description (optional):</label>
+		<textarea id="surveyDescription"></textarea>
+	</div>
+	<div class="tabToolbar">
+		<div id="addCheckbox" class='toolButton' title="Click to Create a Checkbox Question">Checkbox</div>
+		<br /> 
+		<div id="addDatetime" class='toolButton' title="Click to Create a Date/Time Selector">Date/Time Picker</div>
+		<br />
+		<div id="addInstruction" class='toolButton' title="Click to Create an Instruction Block">Instructions</div>
+		<br />
+		<div id="addRadio" class='toolButton' title="Click to Create a Radio (one answer) Question">Radio</div>
+		<br />
+		<div id="addScale" class='toolButton' title="Click to Create a Scale Based Question">Scale</div>
+		<br />
+		<div id="addTextbox" class='toolButton' title="Click to Create a Textbox Question">Textbox</div>
+		<br />
+		<!---  <div id="addUpload" class='toolButton' title="Click to Create a File Upload Button">Upload File</div> -->
+	</div>
+	<div id="tabEditArea" class='tabEditArea'>
+		
+	</div>
+	<div id="surveyButtons" class="creatorButtons">
+		<div id="surveySubmit" class="creatorButtonLeft"></div>
+		<div id="surveyClear" class="creatorButtonRight"></div>
+	</div>
+</div>
+<div id="createSurveyInstruction" class="modal">
+	<div class="modalHeader">
+		<h2>Create an Instruction Block:</h2>
+	</div>
+	<div class="modalInstruction">
+		<div class="modalLabelI">
+			<label for="instructionText">Enter Instruction Text:</label>
+		</div>
+		<div class="modalInputI">
+			<textarea name="instructionText" id="instructionText" rows="10" class="mceEditor"></textarea>
+		</div>
+	</div>
+</div>
+<div id="createSurveyQuestion" class="modal">
+	<div class="modalHeader">
+		<h2>Create a question:</h2>
+	</div>
+	<div class="modalQuestion">
+		<div class="modalLabelS">
+			<label for="questionText">Enter Question Text:</label>
+		</div>
+		<div class="modalInputS">
+			<input name="questionText" id="questionText" type="text" value="" />
+		</div>
+	</div>
+	<div class="modalQuestion">
+		<div class="modalLabelS">
+			<label for="yesNoRadio">Is this Question Required:</label>
+		</div>
+		<div class="modalInputS" id="yesNoRadio" title="Please select if question is required.">
+			<input name="questionReq" type="radio" id="noReq" value="0" checked="checked" /><label for="noReq">No</label>
+			<input name="questionReq" type="radio" id="yesReq" value="1" /><label for="yesReq">Yes</label>
+		</div>
+	</div>
+	<div id="questionDetail">
+		
+	</div>
+</div>
+<div id="createSurveyQMulti" class="modal">
+	<div class="modalHeader">
+		<h2>Create a multiple choice question:</h2>
+	</div>	
+	<div class="modalQuestion">
+		<div class="modalLabelS">
+			<label for="multiQuestionText">Enter Question Text:</label>
+		</div>
+		<div class="modalInputS">
+			<input name="multiQuestionText" id="multiQuestionText" type="text" value="" />
+		</div>
+	</div>
+	<div class="modalQuestion">
+		<div class="modalLabelS">
+			<label for="multiQuestionReq">Is this Question Required:</label>
+		</div>
+		<div class="modalInputS" id="yesNoRadioM">
+			<input name="multiQuestionReq" type="radio" id="noReqM" value="0" checked="checked" /><label for="noReqM">No</label>
+			<input name="multiQuestionReq" type="radio" id="yesReqM" value="1" /><label for="yesReqM">Yes</label>
+		</div>
+	</div>
+	<div class="answerContainer">
+		<div class="answerVal" id='answerVal' title="Click to add a possible selection for the multiple choice question."> 
+			
+		</div> 
+	</div>
+	<div class="answerDetail">
+	
+	</div>
+</div>
+<div id="createSurveyQScale" class="modal">
+	<div class="modalHeader">
+		<h2>Create a scale based question:</h2>
+	</div>	
+	<div class="modalQuestion">
+		<div class="modalLabelS">
+			<label for="scaleQuestionText">Enter Question Text:</label>
+		</div>
+		<div class="modalInputS">
+			<input name="scaleQuestionText" id="scaleQuestionText" type="text" value="" />
+		</div>
+	</div>
+	<div class="modalQuestion"> 
+		<div class="modalLabelS">
+			<label for="scaleQuestionReq">Is this Question Required:</label>
+		</div>
+		<div class="modalInputS" id="yesNoRadioS">
+			<input name="scaleQuestionReq" type="radio" id="noReqS" value="0" checked="checked" /><label for="noReqS">No</label>
+			<input name="scaleQuestionReq" type="radio" id="yesReqS" value="1" /><label for="yesReqS">Yes</label>
+		</div>
+	</div>
+	<div id="scaleSelector">
+	</div>
+	<div id="scaleDetail">
+	
+	</div>
+</div>
+
+<div id="scaleOptionModal" class="modal">
+	<h2>Select Scale Options:</h2>
+	<div id="scaleOptions">
+		
+	</div>
+</div>

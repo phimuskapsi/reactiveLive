@@ -1,0 +1,43 @@
+<script type="text/javascript">
+$(function(){
+	$("#adminFunction p").hide();
+	$("#adminTabs").tabs({
+		load : function(event, ui){
+			cookieRefresh();
+			switch(ui.index){
+				case 0:
+					if(masterReload){
+						reloadSurvey(false, null);
+					}
+				break;
+				
+				case 1:
+					// Nothing yet
+				break;
+				
+				case 2: 
+					if(masterReload){
+						reloadProtocol(false, null);
+					}
+				break;
+				
+				case 3:
+					// Nothing yet
+				break;
+			}
+			
+			writeLastTabs("admin", ui.index);
+		}
+	});	
+	
+}); 
+</script>
+
+<div id="adminTabs">
+	<ul>
+		<li><a href="../../../data/pieces/createSurveyTab.html">Create Survey</a></li>
+		<li><a href="../../../data/pieces/createReportTab.html">Create Report</a></li>
+		<li><a href="../../../data/pieces/createProtocolTab.html">Create Protocol</a></li>
+		<li><a href="../../../data/pieces/userManagementTab.html">User Management</a></li>
+	</ul>
+</div> 

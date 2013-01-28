@@ -1,0 +1,31 @@
+<script type="text/javascript"> 
+
+$(function(){
+	initUserManagement();
+});
+
+</script>
+<div id="userManagementTab" class="creatorTab">
+	<div class="tabTitle">
+		<h2>User Management</h2>
+	</div>
+	<div class="tabToolbar">
+		<div id="createGroup" class='toolButton' title="Click to create a user group.">Create User Group</div>
+		<br /> 
+		<div id="showActive" class='toolButton' title="Click to show only active users.">Show Active Users</div>
+		<br /> 
+		<div id="showAdmin" class='toolButton' title="Click to show only admins.">Show Admin Users</div>
+		<br />
+		<div id="showUsers" class='toolButton' title="Click to show only users.">Show Users</div>
+		<br /> 
+		<!---  <div id="addUpload" class='toolButton' title="Click to Create a File Upload Button">Upload File</div> -->
+	</div>
+	<div id="userManagementDetail" class='tabEditArea'>
+		
+	</div>
+	<div id="userManagementButtons" class="creatorButtonsWide">
+		<button id="userAdd" class="creatorButtonLeft">Add User</button>
+		<button id="userEdit" class="creatorButtonRight">Edit User</button>
+		<button id="userDelete" class="creatorButtonRight">Delete User</button>
+	</div>
+</div>

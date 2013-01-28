@@ -1,0 +1,100 @@
+body{
+	background-color: #5c9ccc;
+	color: #FFF;
+	font-family: Arial, Helevetica, sans-serif;
+	font-size: 10px;
+}
+
+#answerBar{
+	width: 100%;
+	height: 100px;
+	float: left;
+}
+
+#stroopCenter{
+	background-color: #fcfdfd;
+	color: #000;
+	border-radius: 5px;
+	border: 1px solid #000;
+	
+	width: 800px;
+	height: 600px;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+#stroopMain{
+	width: 100%;
+	height: 100%;	
+}
+
+#numberDisplay{
+	width: 100%;
+	height: 400px;
+	float:left;
+	border-top: 1px solid #1e5885;
+	border-bottom: 1px solid #1e5885;
+}
+
+#numberP{
+	font-size: 172px;
+	font-family: Arial, Helevetica, sans-serif;
+	color: #FF0000;
+	text-align: center;
+	vertical-align:middle;
+	font-weight:900;
+	height: auto;
+}
+
+#roundDisplay{
+	width: 100%;
+	height: 100px;
+	float: left;
+	background-color:#A0C7E6;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+#roundCounter{
+	width: 200px;
+	float: left;
+	margin-left: 300px;
+	height: 100px;
+}
+
+#roundHead{
+	height: 50px;
+	text-align: center;
+	vertical-align:middle;
+	font-size: 28px;
+	width: 100%;
+	font-weight: 800;
+}
+
+#roundNumber{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	vertical-align:middle;
+	float: left;
+	font-size: 24px;
+}
+
+.buttonContainer{
+	width: 266.6667px;
+	height: 100px;
+	float: left;
+}
+
+.button{
+	width: 246.6667px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.keypadVal{
+	width: 246.6667px;
+	margin-left: 10px;
+	text-align: center;
+	float: left;
+}

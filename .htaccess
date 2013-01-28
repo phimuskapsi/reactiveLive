@@ -1,0 +1,8 @@
+
+RewriteEngine on
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+RewriteCond %{HTTP_HOST} ^reactiveresearch\.xperimentalcode\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.reactiveresearch\.xperimentalcode\.com$
+RewriteRule ^experiments\/strooptask$ "http\:\/\/xperimentalcode\.com\/strooptask" [R=301,L]
+

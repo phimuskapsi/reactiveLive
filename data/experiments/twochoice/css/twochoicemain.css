@@ -1,0 +1,145 @@
+body{
+	background-color: 	#B0C4DE;
+}
+
+#tcipmainPage{
+	width:  			100%;
+	height: 			100%;
+}
+
+#tcipcenterContent{
+	width: 				610px;
+	height:				400px;
+	float:				left;
+	border-radius:		10px;
+}
+
+#tcipsubContainer{
+	width: 				850px;
+	height: 			100%;
+	margin-left: 		auto;
+	margin-top:			50px
+}
+
+.tcipdisplayFrame{
+	width: 				299px;
+	height: 			360px;
+	background-color:	#909090; 
+	border:				1px solid #000;
+	border-radius:		10px;
+}
+
+.tcipdisplayWindow{
+	width: 				280px;
+	height: 			280px;
+	background-color:	#FFFFFF; 
+	position:			relative;
+	top:				10px;
+	margin:				auto;
+	border:				1px solid #000;
+	border-radius:      10px;
+}
+
+#tcipdisplayFrameLeft{
+	float:left;
+}
+
+#tcipdisplayFrameRight{
+	float:			left;
+	margin-left: 	8px;
+}
+
+.tcipcontrol{
+	height: 			50px;
+	width: 				280px;
+	background-color:	#FFFFFF;
+	border:				1px solid #000;
+	margin:				auto;
+	position:			relative;
+	top:				20px;
+	left: 				10px;
+	text-align: 		center;
+	border-radius:      10px;
+	font-size:          16px;
+}
+
+#tcipboxes{
+	width:				120px;
+	height:				600px;
+	margin-left:		10px;
+	margin-right:		0px;
+	float:				left;
+}
+
+#tcipscoreBox{
+	width:				100%;
+	height: 			130px;
+	background-color:	#FFFFFF;
+	border: 			1px solid #000;
+	
+	border-radius:      5px;
+}
+
+#tcipscoreTitle{
+	height: 			53px;
+	width:				100%;
+	background-color:	#909090;
+	float:				left;
+	border-bottom:      1px solid #000;
+	text-align:         center;
+	border-radius:      5px;
+}
+
+#tcipscoreDisplay{
+	height: 			75px;
+	width:				100%;
+	float: 				left;
+}
+
+#tcipscoreDisplay h1{
+	font-weight:        bolder;
+	text-align:   		center;
+	font-family:        "Courier New";
+}
+
+#tciproundBox{
+	width:				100%;
+	height: 			130px;
+	background-color:	#FFFFFF;
+	border: 			1px solid #000;
+	float:				left;
+	border-radius:      5px;
+	margin-top:			10px;
+}
+
+#tciproundTitle{
+	height: 			53px;
+	width:				100%;
+	background-color:	#909090;
+	float:				left;
+	border-bottom:      1px solid #000;
+	text-align:         center;
+	border-radius:      5px;
+}
+
+#tciproundDisplay{
+	height: 			75px;
+	width:				100%;
+	float: 				left;
+}
+
+#tciproundDisplay h1{
+	font-weight:        bolder;
+	text-align:   		center;
+	font-family:        "Courier New";
+}
+
+.tciptcipinputBox{
+	width:  50px;
+	height: 25px;
+}
+
+.tciptciplabelBox{
+	width: 300px;
+	height: 25px;
+}

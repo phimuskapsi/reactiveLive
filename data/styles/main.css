@@ -1,0 +1,811 @@
+/*
+ * CSS for time picker
+ */
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+/*
+ * End of time picker
+ */
+
+/* CSS for multiselector */
+.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:1px }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+/* End of CSS for Multiselect */
+
+
+body{
+	background-color: #5c9ccc;
+	color: #FFF;
+	font-family: Arial, Helevetica, sans-serif;
+	font-size: 10px;
+}
+
+.answerContainer{
+	width: 200px;
+	height: 380px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	float: left;
+}
+
+.answerDetail{
+	width: 350px;
+	height: 380px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	float:left;
+}
+
+.answerFinished{
+	width: 331px;
+	height: 38px;
+	float: left;
+}
+
+.answerFinished input{
+	width: 250px;
+}
+
+.answerVal{
+	width: 181px;
+	height: 25px;
+	float: left;
+}
+
+.buttonBox{
+	clear:both;
+	width: 100%;
+	height: 50px;
+	float:left;
+}
+
+.buttons{
+	width: 185px;
+	margin-top: 10px;
+}
+
+.creatorButtonLeft{
+	width: 148px;
+	height: 25px;
+	float: left;
+	margin-top: 12.5px;
+}
+
+.creatorButtonRight{
+	width: 148px;
+	height: 25px;
+	float: left;
+	margin-top: 12.5px;
+	margin-left: 9px;
+}
+
+.creatorButtons{
+	height: 50px;
+	width: 325px;
+	float: right;
+}
+
+.creatorButtonsWide{
+	height: 50px;
+	width: 480px;
+	float: right;
+}
+
+.errorIcon {
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-top: 24px;
+	background-image: url('images/error.png');
+}
+
+.formLabels{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.hiddenField{
+	display: none;
+}
+
+.labelInputBox{
+	clear:both;
+	width: 220px;
+	height: 65px;
+	float:left;
+	margin-top: 10px;
+}
+
+.messageIcon{
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	float: left;
+}
+
+.messageIcon img{
+	margin-top: 12px;
+}
+
+.messageMsg{
+	width: 230px;
+	height: 48px;
+	text-align: center;
+	float: left; 
+}
+
+.messageMsg p{
+	margin-top: 16px;
+}
+
+.modal{
+	display: none;
+}
+
+.modalHeader{
+	width: 550px;
+	height: 40px;
+}
+
+.modalInput{
+	width: 500px;
+	float: left;
+	margin-top: 2px;
+	height: 25px;
+}
+
+.modalInput input{
+	width: 490px;
+	float: left;
+	margin-left: 10px;
+	height: 25px;
+}
+
+.modalInput select{
+	width: 490px;
+	float: left;
+	margin-left: 10px;
+	height: 25px;
+}
+
+.modalInputS{
+	width: 325px;
+	float: left;
+	height: 25px;
+}
+
+.modalInputS input{
+	width: 320px;
+}
+
+.instructionClass{
+	width: 500px;
+	margin-left: 25px;
+	min-height: 150px;
+	max-height: 300px;
+	margin-bottom: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modalInstruction{
+	width: 550px;
+	height: 300px;
+}
+
+.modalInputI{
+	width: 500px;
+	float: left;
+	height: 275px;
+}
+
+.modalInputI textarea{
+	width: 500px;
+}
+
+.modalLabelI{
+	width: 500px;
+	float: left;
+	height: 25px;
+}
+
+.modalLabel{
+	width: 500px;
+	float: left;
+}
+
+.modalLabel{
+	margin-left: 0px !important; 
+	font-weight: bold !important;
+}
+
+.modalLabelS{
+	width: 200px;
+	float: left;
+	height: 25px;
+}
+
+.modalLabelS label{
+	font-size:12px;
+	font-weight: bolder;
+}
+
+.modalQuestion{
+	width:550px;
+	height:40px;
+}
+
+.optionHead.ohLeft{
+	line-height: 29px;
+	height: 116px;
+	width:  600px;
+	float: left;
+}
+
+.optionHead.ohRight{
+	line-height: 29px;
+	height: 116px;
+	width: 309px;
+	float: left;	
+}
+
+.ohRight textarea{
+	height: 80px !important;
+	width: 309px !important;
+	float: left;
+	margin-top: 13px !important;
+}
+
+.ohRight label{
+	margin-left: 0px !important;
+	height: 16px !important;
+	width: 309px !important;
+	float: left;
+}
+
+.optionHead label{
+	color: #5C9CCC;
+	width: 148px;
+	height: 24px;
+	line-height: 24px;
+	float: left;
+	margin-left: 20px;
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+.optionHead input{
+	width: 400px;
+	height: 24px;
+	float: left;
+}
+
+.optionHead select{
+	width: 400px;
+	height: 24px;
+	float: left;
+}
+
+.optionHead option{
+	width: 400px;
+	height: 24px;
+	float: left;
+}
+
+.qHeadIcon{
+	float: left;
+	margin-top: 3px !important;
+	margin-left: 4px !important;
+}
+
+.qheadIconBox{
+	height:24px;
+	width: 24px;
+	float: left;
+}
+
+.qheadNum{
+	height: 24px;
+	width:  100px;
+	float: left;
+	color: #333333;
+}
+
+.qheadReq{
+	font-size: 10px;
+	color: #FF0000;
+	float: left;
+	height: 24px;
+	width: 60px;
+}
+
+.qheadReqStar{
+	height: 16px;
+	font-size: 18px;
+	font-weight:bolder;
+	color: #FF0000;
+	margin-top: 4px;
+}
+
+.qHeadText{
+	height: 24px;
+	width: 544px;
+	float: left;
+}
+
+.question{
+	width:720px;
+	float: left;
+	margin-left: 10px;
+	margin-top:5px;
+}
+
+.questionBox{
+	width: 716px;
+	height: auto;
+	margin-left: 11px;
+	margin-top: 5px;
+	clear: both;
+}
+
+.questionHead{
+	height:24px;
+	width: 100%;
+	line-height: 24px;
+}
+
+.questionInput{
+	min-height: 100px;
+	height: auto;
+	width: 100%;
+}
+
+.questionInput input:not([type="radio"]):not([type="checkbox"]){
+	width: 350px; 
+	margin-left: 25px;
+	margin-top:  5px;
+	margin-bottom:10px;
+}
+
+.questionInput input[type="radio"]{
+	margin-left: 25px;
+	margin-bottom:10px;
+}
+
+.questionInput input[type="checkbox"]{
+	margin-left: 25px;
+	margin-bottom:10px;
+}
+
+.questionInput textarea{
+	width: 350px;
+	margin-left: 25px;
+	margin-top: 5px;
+	margin-bottom:10px;
+}
+
+.questionInput label{
+	height: 25px;
+	line-height: 25px;
+	margin-left: 5px;
+}
+
+.questionInput p{
+	margin-left: 25px;
+}
+
+.questionInputSpacer{
+	height: 20px;
+	width: 100%;
+}
+
+.questionInputSpacerS{
+	height: 10px;
+	width: 100%;
+}
+
+.tabContent {
+	width: 950px;
+	height: 640px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.tabEditArea{
+	width:740px;
+	float:left;
+	height:467px;
+	overflow-y: visible;
+	overflow-x: hidden;
+	margin-left: 10px;
+	border: 1px solid #5C9CCC;
+}
+
+.tabTitle{
+	width:848px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	
+}
+
+.tabToolbar{
+	width:148px;
+	margin-left:10px;
+	float:left;
+	height:467px;
+}
+
+.textFields{
+	width: 200px;
+}
+
+.tinyText {
+	font-size: 10px;
+	color: #000099;
+}
+
+.toolButton {
+	width: 146px;
+	height: 25px;
+	margin: auto 0px auto 0px;
+}
+
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#adminTabs{
+	height:724px;
+}
+
+#centerContainer{
+	background-color: #fcfdfd;
+	color: #000;
+	border-radius: 5px;
+	border: 1px solid #000;
+	
+	width: 1000px;
+	height: 800px;
+	margin: auto;
+}
+
+#centerTabs{
+	height:784px;
+}
+
+#copyright{
+	width: 1000px;
+	height: 20px;
+	margin: auto;
+}
+
+#fields{
+	width: 600px;
+	height: 200px;
+	margin: auto;
+	border-radius: 5px;
+	border: 1px solid #5c9ccc;
+	color: #5c9ccc;
+}
+
+#fields input{
+	margin-left: 10px;
+	height: 24px;
+}
+
+#fields label{
+	margin-left: 10px;
+	height: 24px;
+	line-height: 24px;
+}
+
+#fields button{
+	margin-left: 10px;
+	height: 24px;
+}
+
+#loginBox{
+	width: 100%;
+	height: 250px;
+	margin: auto;
+	float: left;
+}
+
+#mainContainer{
+	width: 100%;
+	height: 100%;	
+}
+
+#scaleDetail{
+	width: 550px;
+	height: 310px;
+	float: left;
+	margin-top: 5px;
+	border: 1px solid #5C64CC;
+}
+
+.scaleHolder{
+	margin-left: 25px;
+	width: 500px;
+	height: 30px;
+	margin-top: 25px;
+}
+
+.scaleInfo{
+	margin-top: 10px;
+	width: 500px;
+	margin-left: 25px;
+	height: 25px;
+}
+
+.scaleInfo label{
+	margin-left: 0px !important;
+}
+
+.scaleSlider{
+	width: 368px;
+	float: left;
+	margin-top: 1px;
+}
+
+.scaleLabel{
+	width: 60px;
+	height: 15px;
+	float: left;
+	border: 0;
+	color: #f6931f;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.scaleOption{
+	width: 265px;
+	margin-left: 5px;
+	height: 25px;
+	float: left;
+	margin-top: 12.5px;
+}
+
+.scaleOptLabel{
+	width: 120px;
+	height: 25px; 
+	line-height: 25px;
+	float: left;
+}
+
+.scaleOptInput{
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-left: 10px;
+}
+
+#scaleOptions label{
+	width: 120px;
+}
+
+#scaleOptions input{
+	width: 50px; 
+}
+
+#scaleSelector{
+	width: 550px;
+	height: 50px;
+	float: left;
+	border: 1px solid #5C9CCC;
+}
+
+.creatorButtonLeft{
+	width: 148px;
+	height: 25px;
+	float: left;
+	margin-top: 12.5px;
+}
+
+.creatorButtonRight{
+	width: 148px;
+	height: 25px;
+	float: left;
+	margin-top: 12.5px;
+	margin-left: 9px;
+}
+
+.creatorButtons{
+	height: 50px;
+	width: 325px;
+	float: right;
+}
+
+#welcomeStatement {
+	width:  600px;
+	height: 300px;
+	margin: auto;
+}
+
+/* User Management CSS */
+
+.userRow{
+	width: 716px;
+	height: auto;
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+	border: 1px solid #5C64CC;
+}
+
+.urowHead{
+	width: 714px;
+	height: 24px;
+	line-height: 24px;
+	float: left;
+}
+
+.urowNum{
+	width: 40px;
+	font-weight: 600;
+	float: left;
+	margin-left: 10px;
+}
+
+.urowUserName{
+	width: 654px;
+	font-weight: 600;
+	text-align: right;
+	float: left;
+	margin-right: 10px;
+}
+
+.uRowBody{
+	width: 714px;
+	height: 75px;
+	float: left;
+}
+
+.urowAccessLevel{
+	width: 190px;
+	height: 65px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.ualLabel{
+	font-weight: 600;
+}
+
+.ualSelect{
+	width: 150px;
+}
+
+.urowUserDetailC1{
+	width: 257px;
+	float: left;
+	height: 75px;
+}
+
+.urowUserDetailC2{
+	width: 257px;
+	float: left;
+	height: 75px;
+}
+
+.udetailRow1{
+	height: 35px;
+	float: left;
+	width: 100%;
+}
+
+.udetailRow2{
+	height: 35px;
+	margin-top: 5px;
+	width: 100%;
+	float: left;
+}
+
+/* Protocol CSS */
+.pbodyContent{
+	min-height: 130px;
+	height: auto;
+	width: 100%;
+}
+
+.pbodyContentLeft{
+	width: 300px;
+	min-height: 100px;
+	height: auto;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.pbodyDesc{
+	width: 100%;
+	height: 100px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.pbodyRow{
+	width: 100%;
+	height: 15px;
+	line-height: 15px;
+}
+
+.pbrtxt{
+	font-weight: 600;
+	font-size: 11px;
+	width: 120px;
+	float:left;
+}
+
+.detailbox{
+	border: 1px solid #5C9CCC;
+	margin-top: 10px;
+	height: 250px;
+}
+
+.detailbox .selectboxit-container{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.ui-dialog-content .selectboxit-container{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.detailbox label{
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.pbchead{
+	background-color: #DFEFFC;
+	color: #000;
+	font-weight: 800;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+	height:18px;
+	line-height: 18px;
+}
+
+.detailbox .ui-spinner{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}

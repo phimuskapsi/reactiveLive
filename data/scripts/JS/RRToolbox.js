@@ -1,0 +1,3 @@
+$(function(){
+	$("#modalToolbar button").draggable();
+});

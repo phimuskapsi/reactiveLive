@@ -1,0 +1,48 @@
+<script type="text/javascript"> 
+
+$(function(){
+	initProtocol();
+});
+
+</script>
+<div id="createProtocolTab" class="creatorTab">
+	<div class="tabTitle">
+		<h2>Create a Protocol</h2>
+	</div>
+	<div id="protocolOptions" class="optionHead ohLeft">
+		<label for="protocolName" title="Please enter a protocol name.">Protocol Name: </label>
+		<input type="text" value="" id="protocolName" />		
+		<br />
+		<label for="existingProtocol" title="Please select an existing protocol.">Existing Protocol Name: </label>
+		<select id="existingProtocol">
+			<option value="">--- There are no existing protocols ---</option>
+		</select>
+		<br />
+		<label for="protocolStartDate" title="Select a start date if you want.">Start Date:</label>
+		<input type="text" value="" id="protocolStartDate" />
+		<br />
+		<label for="protocolEndDate" title="Select a end date if you want.">Start Date:</label>
+		<input type="text" value="" id="protocolEndDate" />
+	</div>
+	<div id="protocolOptions2" class="optionHead ohRight">
+		<label for="protocolDescription" title="Please enter a protocol description.">Protocol Description (optional):</label>
+		<textarea id="protocolDescription"></textarea>
+	</div>
+	<div class="tabToolbar">
+		<div id="attachSurvey" class='toolButton' title="Click to attach a survey.">Attach Survey</div>
+		<br /> 
+		<div id="attachExperiment" class='toolButton' title="Click to attach an experiment">Attach Experiment</div>
+		<br />
+		<div id="attachUsers" class='toolButton' title="Click to add a user(s).">Attach User(s)</div>
+		<br /> 
+		<!---  <div id="addUpload" class='toolButton' title="Click to Create a File Upload Button">Upload File</div> -->
+	</div>
+	<div id="protocolEditArea" class='tabEditArea'>
+		
+	</div>
+	<div id="protocolButtons" class="creatorButtons">
+		<div id="protocolSubmit" class="creatorButtonLeft"></div>
+		<div id="protocolClear" class="creatorButtonRight"></div>
+	</div>
+</div>
+<div id="protocolDialog"></div>
