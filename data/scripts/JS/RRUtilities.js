@@ -161,7 +161,7 @@ function fetchData(target, asyn, command, params){
 	}
 	
 	if(command != null){
-		if(command.toLowerCase().indexOf("save") >= 0 || command.toLowerCase().indexOf("load") >= 0){
+		if(command.toLowerCase().indexOf("save") >= 0 || command.toLowerCase().indexOf("load") >= 0 || command.indexOf("sendTestData") >=0){
 			sendtype = "POST";
 		}
 	}

@@ -1,8 +1,20 @@
 <?php
 	require_once('/home3/xperime1/public_html/reactiveResearch/data/connect/mysqli.connect.php');
+	$nogpdata = false;
 	
 	if(isset($_GET)){
 		extract($_GET);
+	} else {
+		$nogpdata = true;
+	}
+	
+	if(isset($_POST)){
+		extract($_POST);
+	} else {
+		$nogpdata = true;
+	}
+	
+	if(!$nogpdata){
 		if(isset($command)){
 			$exploaderClass = new exploaderClass();
 			$exploaderClass -> callFunction($command, $params);
@@ -16,8 +28,8 @@
 			echo 'failed-pass';
 		}
 	} else {
-		echo 'failed-user';
-	}	
+		echo 'no-get-post';
+	}
 		
 	class exploaderClass {
 		private $conn = null;

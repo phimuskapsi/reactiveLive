@@ -22,7 +22,7 @@ function loadExperimentSet(){
 		
 		if(expLoop == 0){
 			stroopParams['type']   = 0;
-			stroopParams['rounds'] = 15;
+			stroopParams['rounds'] = 30;
 			$("#centerContainer").empty().load('../data/experiments/strooptask/index.html #stroopMain', function(){			
 				showMessage("In order to complete the following test press the # key that corresponds to the color of the text. There are " + stroopParams['rounds'] + " rounds to complete.", "notice2", btns, cls);
 				return;
@@ -30,10 +30,10 @@ function loadExperimentSet(){
 			
 		} else if(expLoop == 1){
 			stroopParams['type']   = 1;
-			stroopParams['rounds'] = 30;
+			stroopParams['rounds'] = 60;
 		} else if(expLoop == 2){
 			stroopParams['type']   = 0;
-			stroopParams['rounds'] = 15;
+			stroopParams['rounds'] = 30;
 		}
 		
 		showMessage("In order to complete the following test press the # key that corresponds to the color of the text. There are " + stroopParams['rounds'] + " rounds to complete.", "notice2", btns, cls);
